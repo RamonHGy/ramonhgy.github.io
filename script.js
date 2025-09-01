@@ -40,15 +40,35 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
   button.innerHTML = 'Enviando... ⏳';
   button.disabled = true;
   
-  setTimeout(() => {
-    button.innerHTML = 'Mensagem Enviada! ✅';
+  fetch(this.action, {
+    method: 'POST',
+    body: new FormData(this),
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      button.innerHTML = 'Mensagem Enviada! ✅';
+      setTimeout(() => {
+        button.innerHTML = originalText;
+        button.disabled = false;
+        this.reset();
+      }, 2000);
+    } else {
+      return response.json().then(data => { throw new Error(data.error || 'Erro ao enviar'); });
+    }
+  })
+  .catch(error => {
+    button.innerHTML = 'Erro ao enviar ❌';
+    console.error(error);
     setTimeout(() => {
       button.innerHTML = originalText;
       button.disabled = false;
-      this.reset();
     }, 2000);
-  }, 1500);
+  });
 });
+
 
 // Efeito parallax suave no background
 window.addEventListener('scroll', () => {
