@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramon - Desenvolvedor Back-End</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="bg-animation"></div>
+
+  <nav>
+    <div class="nav-container">
+      <div class="logo">RG</div>
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <!-- <li><a href="#skills">Habilidades</a></li> -->
+        <!-- <li><a href="#experience">Experiência</a></li> -->
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Ramon Godoy</h1>
+      <p class="subtitle">Desenvolvedor Back-End</p>
+      <p class="description">
+        Explorando a arte da programação para transformar ideias em realidade!
+      </p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn btn-primary">Ver Projetos <i class="fa-solid fa-laptop-code"></i></a>
+        <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section id="about" class="fade-in">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="about-grid">
+        <div class="about-image">👨‍💻</div>
+        <div class="about-text">
+          <h3>Desenvolvedor Back-End</h3>
+          <p>
+           Olá! Eu sou Ramon Godoy.
+           Estou iniciando minha carreira como desenvolvedor e atualmente curso o 4º semestre de Análise e Desenvolvimento de Sistemas. Tenho grande interesse em atuar como Desenvolvedor Back-End e estou construindo meu portfólio para compartilhar meus projetos e evolução na área.
+          </p>
+          <p>
+            <!-- Minha paixão está em resolver problemas complexos através de código limpo 
+            e arquiteturas bem estruturadas. Sempre busco as melhores práticas de 
+            desenvolvimento e estou constantemente aprendendo novas tecnologias. -->
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>⚙️ Linguagens & Frameworks</h3>
+          <div class="skill-list">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>🗄️ Bancos de Dados</h3>
+          <div class="skill-list">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+        <!-- <div class="skill-category">
+          <h3>☁️ Cloud & DevOps</h3>
+          <div class="skill-list">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">GitLab CI</span>
+          </div>
+        </div> -->
+        <div class="skill-category">
+          <h3>🔧 Ferramentas & Outros</h3>
+          <div class="skill-list">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="fade-in">
+      <h2 class="section-title">Formação acadêmica e cursos</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="job-title">Análise e Desenvolvimento de sistemas</div>
+            <div class="company">Universidade presbiteriana Mackenzie </div>
+            <div class="period"> Fev 2024 - Out 2025</div>
+            <p>Estudo focado em desenvolvimento de software, bancos de dados e programação em Java e Python. Participação em projetos acadêmicos de desenvolvimento de sistemas.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="job-title">Java COMPLETO Programação Orientada a Objetos + Projetos</div>
+            <div class="company">Udemy</div>
+            <div class="period">Concluído em 2025</div>
+            <p>Curso completo de Java abordando POO, construção de projetos práticos e boas práticas de programação</p>
+          </div>
+        </div>
+        <!-- <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="job-title">Desenvolvedora Back-End Pleno</div>
+            <div class="company">StartupXYZ</div>
+            <div class="period">Jun 2019 - Fev 2021</div>
+            <p>Criação de microsserviços para plataforma de streaming usando Python Django. Integração com serviços de CDN e implementação de analytics em tempo real.</p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2 class="section-title">Projetos</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-title">Sistema Agendamento PetShop</div>
+          <div class="project-description">
+            Sistema de Agendamento PetShop 🐕 Web Service RESTful desenvolvido em Jakarta EE para sistema de agendamento de banho em petshop. Projeto acadêmico da faculdade com foco em tecnologias enterprise
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Jakarta EE</span>
+            <span class="tech-tag">Apache Derby</span>
+            <span class="tech-tag">JAX-RS</span>
+            <span class="tech-tag">JBDC</span>
+
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/RamonHGy/Petshop-Web-Service" class="project-link">Ver Código <i class="fa-solid fa-code"></i></a>
+          </div>
+        </div>
+        <!-- <div class="project-card">
+          <div class="project-title">API de Analytics em Tempo Real</div>
+          <div class="project-description">
+            Sistema de coleta e processamento de dados em tempo real para análise de comportamento de usuários, com dashboard interativo.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">Apache Kafka</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">Elasticsearch</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Ver Código 🔗</a>
+            <a href="#" class="project-link">Documentação 📚</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Sistema de Notificações Distribuído</div>
+          <div class="project-description">
+            Plataforma para envio de notificações multi-canal (email, SMS, push) com alta disponibilidade e processamento assíncrono.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">RabbitMQ</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Ver Código 🔗</a>
+            <a href="#" class="project-link">API Docs 📋</a>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2 class="section-title">Entre em contato</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="" class="contact-item">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <div>
+              <strong>Email</strong><br />
+              Ramon.rhg@outlook.com
+            </div>
+          <a href="https://www.linkedin.com/in/ramon-godoy-99368a205/" class="contact-item">
+            <span><i class="fa-brands fa-linkedin"></i></span>
+            <div>
+              <strong>LinkedIn</strong><br />
+              /in/RamonGodoy
+            </div>
+          </a>
+          <a href="https://github.com/RamonHGy" class="contact-item">
+            <span><i class="fa-brands fa-github"></i></span>
+            <div>
+              <strong>GitHub</strong><br />
+              /RamonGodoy
+            </div>
+          </a>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
