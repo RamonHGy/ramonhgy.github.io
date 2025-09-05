@@ -171,6 +171,15 @@ nav {
     color: #ffffff;
 }
 
+/* .btn-curriculo{
+    background: linear-gradient(135deg, #000397, #08016e9d);
+    color: white;
+}
+.btn-curriculo:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+} */
+
 /* Sections */
 section {
     padding: 5rem 0;
